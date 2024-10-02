@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Tong
 - 👀 I’m interested in nature, science, traveling, imaging
-- 🌱 I’m currently learning graphic design, foundations of cybersecurity
+- 🌱 I’m currently learning graphic design and cybersecurity
 - 💞️ I’m looking to collaborate on graphic design
 - 📫 How to reach me @tttongtan on github and instagram
 - 😄 Pronouns: she/her
