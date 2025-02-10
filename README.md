@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on infographics and graphic design
 - 📫 How to reach me: @tttongtan on github and instagram
 - 😄 Pronouns: she/her
-- ⚡ Fun fact: nowadays I draw dinosaurs as a hobby
+- ⚡ Fun fact: nowadays I draw dinosaurs as a hobby!
 
 <!---
 tttongtan/tttongtan is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
