@@ -1,7 +1,7 @@
 - 👋 Hi, I’m Tong
-- 👀 I’m interested in nature, science, traveling, infographic design, and everything in between
+- 👀 I’m interested in nature, science, travelling, infographic design, and everything in between
 - 🌱 I’m currently learning illustration and graphic design
-- 💞️ I’m looking to collaborate on graphic design
+- 💞️ I’m looking to collaborate on infographics and graphic design
 - 📫 How to reach me: @tttongtan on github and instagram
 - 😄 Pronouns: she/her
 - ⚡ Fun fact: nowadays I draw dinosaurs as a hobby
