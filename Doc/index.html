@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <title>responsive navbar</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        
+        body{
+            margin: 0;
+            padding:0;
+            font-family: "Poppins", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        nav ul{
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        nav li{
+            height: 50px;
+            font-size: 18px;
+            padding: 8px 8px 8px 8px;
+        }
+
+        .mainNav li:first-child{
+            margin-right: auto;
+        }
+
+        nav a{
+            height: 100%;
+            padding: 0 30px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+
+        .sidebar{
+            height: 100vh;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: aliceblue;
+            backdrop-filter: blur(12px);
+            /* box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1); */
+            overflow: hidden;
+            transition: all 2s ease-in-out;
+            list-style: none;
+            /* display: none; */
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-start;
+        }
+
+        .sidebar li{
+            list-style-type: none;
+        }
+
+        .sidebar a{
+            padding: 8px;
+            text-decoration: none;
+            color: black;
+            display: block;
+            transition: 0.5s;
+            
+        }
+
+        .sidebar a:hover,.sidebar a:focus{
+            color: rgb(47, 213, 255);
+        }
+
+        .sidebar-content{
+            position: relative;
+            /* top: 15%; */
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+
+        }
+        .menu-button{
+            display: none
+        }
+
+        .frontbanner img{
+    max-width: 100%;
+    position: relative;
+}
+
+main{
+    max-width: 100%;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+.workimage{
+    text-align: center;
+    margin:80px 0;
+    white-space: nowrap;
+}
+
+.workimage li{
+    display: inline-block;
+    list-style-type: none;
+    width: 40%;
+    margin: 20px 5%;
+    position: relative;
+
+} 
+
+.workimage li img{
+    max-width: 100%;
+}
+
+.workimage li:hover{
+    top: -4px;
+}
+
+.socials{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.socials li{
+    display: inline-block;
+    padding: 10px;
+}
+        
+        @media(max-width: 800px){
+            .hideOnMobile{
+                display: none;
+            }
+            .menu-button{
+                display: block;
+            }
+        }
+        @media(min-width: 800px){
+            .sidebar{
+                display: none;
+
+            }
+        }
+        
+
+    .copyright{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar" id='myNav'>
+          <li style="cursor: pointer; padding: 20px" onclick="closeNav()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+          <div class="sidebar-content">
+          <li><a href="#">Tong Folio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Works</a></li>
+          <li><a href="#">Contact</a></li>
+        </div>
+        </ul>
+        <ul class="mainNav" id='myNav'>
+          <li><a href="#"><h1>Tong Folio</h1></a></li>
+          <li class="hideOnMobile"><a href="#">About</a></li>
+          <li class="hideOnMobile"><a href="#">Works</a></li>
+          <li class="hideOnMobile"><a href="#">Contact</a></li>
+          <li class="menu-button" onclick="openNav()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+        </ul>
+      </nav>
+
+      <section class="frontbanner">
+        <img src="/Oct10/whale.png" alt="front page banner image">
+      </section>
+
+      <main>
+
+        <article>
+            <h2>Tong's works</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet, magni? Quisquam quaerat nemo impedit autem ab fuga ullam inventore mollitia consequatur? Eveniet autem dolorem nobis exercitationem beatae quis mollitia cum.</p>
+        </article>
+        <article>
+            <ul class="workimage">
+                <li><img src="/ME/img/work1.png" alt="work 1 image"></li>
+                <li><img src="/ME/img/work2.png" alt="work 2 image"></li>
+            </ul>
+        </article>
+    </main>
+
+    <section class="socials">
+        <ul>
+            <li><a href="https://www.instagram.com/tttongtan/"><img src="/ME/img/Instagram_Glyph_Black.svg" alt="instagram logo" style="width: 42px;height: 42px;"></a></li>
+            <li><a href="https://github.com/tttongtan/tttongtan"><img src="/ME/img/github-mark.png" alt="github logo"style="width: 42px;height: 42px;"></a></li>
+            <li><a href="https://www.linkedin.com/in/tongtan/"><img src="/ME/img/LI-In-Bug.png" alt="linkedin logo"style="width: 42px;height: 42px;"></a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p class="copyright">Copyright 2024 Tong</p>
+    </footer>
+
+      <script>
+        function openNav(){
+            document.getElementById('myNav').style.width='100%'
+        }
+
+        function closeNav(){
+            document.getElementById('myNav').style.width='0%'
+        }
+    </script>
+</body>
+</html>
